@@ -1,0 +1,34 @@
+{
+  "name": "solutions-js",
+  "version": "1.0.0",
+  "description": "Repo for coding solutions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "root": true
+  },
+  "jest": {
+  "testPathIgnorePatterns": [
+    "generator-exercise/"
+  ]
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/policeage/Solutions-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/policeage/Solutions-JS/issues"
+  },
+  "homepage": "https://github.com/policeage/Solutions-JS#readme",
+  "dependencies": {
+    "jest": "^29.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
+}
