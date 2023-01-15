@@ -79,6 +79,7 @@ Post Solution thoughts:
 
 I finally got it, it took me about 3 days or about 18ish hours and I finally managed to complete it. One of the biggest hurdles was using Regular Expressions and properly capturing the
 contracted words to display properly. Creating the test regular expression helped a lot since it'll always capture regular words and contracted words e.g. Can't Won't etc.
+To add on to this, the RegEx captures contracted words, not compounded words so if there were a lot of compounded words (e.g. right-of-way) it would not properly catch them.
 
 Another hurdle was working with maps and sets which were a first for me, basically I used sets to find Unique Words/Letters and then set it to an Array so I could do a .forEach()
 which added the unique word as the key and the number of times it appeared as a value, which in this I used the .filter() method on the two arrays and returned the .length of the array

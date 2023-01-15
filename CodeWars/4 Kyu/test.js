@@ -30,32 +30,6 @@ const uniqueWords = new Set(Array.from(text5.matchAll(test)))
 const test3 = [ ...uniqueWords ]
 
 
-console.log(map1)
-
 let text2 = "a a a  b  c c  d d d d  e e e e e"
 
-function topThreeWords(text) {
-    const stringCheck = new Set((text.replace(/[^a-zA-Z' ]/gi, '').trim().split(/[^\w']+/)))
-    const checkArr = [ ...stringCheck ]
-    const test = /[A-Za-z]+('[A-Za-z]+)?/g
-    if (!test.test(checkArr[0])) {
-      return []
-    }
-    const uniqueWords = new Set(text.toLowerCase().match(test))
-    let uniqueWordArr = [ ...uniqueWords ]
-    const wordMap = new Map()
-    const stringArr = (text.toLowerCase().match(test))
-    
-    uniqueWordArr.forEach(word => {
-      wordMap.set(word, stringArr.filter(word1 => word == word1).length)
-    })
-    
-    uniqueWordArr.sort((a,b) => wordMap.get(a) < wordMap.get(b))
-    
-    while (uniqueWordArr.length > 3) {
-      uniqueWordArr.pop()
-    }
-    return uniqueWordArr
-  }
-
-  console.log(topThreeWords(text2))
+console.log(string.replace(/[A-Za-z]/g, ''))
